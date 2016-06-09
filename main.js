@@ -32,25 +32,54 @@ ADVANCED TRACK: 13-18
 
 console.log("Question 1");
 
+var testArray = [99];
+
 // 2. Add an additional item to the beginning of your array.
+
+testArray.unshift(3);
+console.log(testArray);
 
 // 3. Remove the second and third items in your array.
 
+var newArray = ['Yellow', 14, true, false, undefined];
+// var spliceArray = newArray.splice(1, 2);
+var secondArray = newArray
+// console.log(newArray);
+// console.log(spliceArray);
+
 // 4. Add two new items after the second item.
 
+newArray.splice(2, 0, "Kiwi", "Banana")
+console.log(newArray);
+console.log(secondArray);
+
 // 5. Log to the console: 'The current length of the array is....' using the .length method
+
+console.log(newArray.length);
 
 // Use the following Array for questions 6-9:
 var things = ['mug', 'book', 'mouse', 'plant', 'sunglasses'];
 
 // 6. Change 'mouse' to 'keyboard'
 
+things[2] = "keyboard"
+console.log(things);
+
 // 7. Combine all of the elements of the array into a string.
 //    (Hint: check out the 'join' method.)
 
+var string = things.join(" ")
+console.log(string);
+
 // 8. Remove the first item.
 
+things.shift()
+console.log(things);
+
 // 9. Remove all items from the things array.
+
+things.splice(0);
+console.log(things);
 
 // Use the following array for question 10:
 var people = ['Bill', 'Ted', 'Emily', 'Andrea', 'Doug'];
